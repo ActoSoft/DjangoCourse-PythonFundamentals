@@ -5,6 +5,5 @@ if calif >= 6:
     print('Aprobaste la materia, felicidades!')
 else:
     print('Reprobaste la materia, lo siento.')
-print('Esto se tiene que mostrar siempre')
 
 
