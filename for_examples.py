@@ -10,7 +10,7 @@ for i in range(1, 21):
 # Reto 3 - Calcula la suma de los números impares ubicados entre el 50 y el 100.
 acumulador_impares = 0 # Declado una variable en 0, para poder ir acumulando la suma.
 for i in range(51, 100, 2):
-    acumulador_impares += i
+    acumulador_impares += i # acumulador_impares = acumulador_impares + i
 print('La suma de los números impares del 50 al 100 es:', acumulador_impares)
 
 # Reto 4 - Calcula la suma de los números pares entre el 10 y el 100 (utilizar el módulo).
