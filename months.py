@@ -20,6 +20,6 @@ while selection == 'S':
         print('Valor incorrecto')
     else:
         month_str = months[month - 1]
-        print('El mes es:', month_str)
+        print('El mes es: ', month_str)
         selection = input('Quieres ver otro mes?: ')
 print('Adios')
