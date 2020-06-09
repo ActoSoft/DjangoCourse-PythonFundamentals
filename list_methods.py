@@ -1,0 +1,12 @@
+values = ['MX', 'US', 'UK', 'MX', 'MX', 'US', 'UK', 'FR', 'CH', 'CH']
+print(values)
+values.append('JP')
+print(values)
+print('El elemento MX se encuentra', values.count('MX'), 'veces')
+print('El elemento UK se encuentra por primera vez en el índice', values.index('UK'))
+values_copy = values.copy()
+print(values_copy)
+values_copy.extend(['COL', 'ARG', 'BR'])
+print(values_copy)
+values_copy.remove('CH')
+print('La lista sin la palabra CH es:', values_copy)
