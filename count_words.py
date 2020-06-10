@@ -9,12 +9,22 @@ texto = 'Este texto tiene algunas palabras Este es otro texto con algunas palabr
 
 # ¿Cómo verificar si ya existe una clave en un diccionario?
 
-dicc = {
-    'clave1': 1,
-    'clave2': 2
+diccionario = {
+    'tareas': 3,
+    'participaciones': 2,
+    'faltas': 1
 }
 
-if 'clave1' in dicc: # True
-if 'clave3' in dicc: # False
+print(diccionario)
 
+if 'faltas' in diccionario:
+    print("entro")
+    diccionario['faltas'] += 1
+else:
+    print('No existe')
 
+if 'calificaciones' in diccionario:
+    print("entro")
+else:
+    diccionario['calificaciones'] = 1
+print(diccionario)
