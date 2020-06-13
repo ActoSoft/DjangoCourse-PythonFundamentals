@@ -1,30 +1,18 @@
 # El objetivo del programa es contar cuantas veces una palabra está presente en un texto
-# 1.- Separa el texto, guardando cada palabra como un elemento de una lista
-# 2.- Itera la lista y guarda cada palabra como un elemento de un diccionario, donde su valor
-# va a ser la cantidad de veces que aparece esa palabra
-
-
 
 texto = 'Este texto tiene algunas palabras Este es otro texto con algunas palabras diferentes'
+words = texto.split(' ')
+words_dict = {}
+# for word in words:
+#     if word in words_dict:
+#         words_dict[word] += 1
+#     else:
+#         words_dict[word] = 1
 
-# ¿Cómo verificar si ya existe una clave en un diccionario?
+# for word, counter in words_dict.items():
+#     print('Palabra:', word, '===== No. de veces:', counter)
+for word in words:
+    words_dict[word] = words.count(word)
 
-diccionario = {
-    'tareas': 3,
-    'participaciones': 2,
-    'faltas': 1
-}
-
-print(diccionario)
-
-if 'faltas' in diccionario:
-    print("entro")
-    diccionario['faltas'] += 1
-else:
-    print('No existe')
-
-if 'calificaciones' in diccionario:
-    print("entro")
-else:
-    diccionario['calificaciones'] = 1
-print(diccionario)
+for word, counter in words_dict.items():
+    print('Palabra:', word, '===== No. de veces:', counter)
