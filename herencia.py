@@ -18,7 +18,7 @@ class Persona:
 class Alumno(Persona):
 
     def __init__(self, matricula, avg, *args):
-        super().__init__(*args)
+        super(Alumno, self).__init__(*args)
         self.matricula = matricula
         self.avg = avg
 
